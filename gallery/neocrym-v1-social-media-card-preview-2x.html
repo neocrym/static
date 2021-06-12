@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - 2x</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="neocrym.html">neocrym</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="neocrym-v1.html">v1</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="neocrym-v1-social-media-card-preview.html">social-media-card-preview</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="neocrym-v1-social-media-card-preview-2x.html">2x</a>
+      </nav>
+    
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+    </ul>
+    
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+        
+          <li data-src="media/large/neocrym/v1/social-media-card-preview/2x/neocrym-facebook-page-cover--2x.png"
+              data-sub-html=""
+              data-download-url="media/large/neocrym/v1/social-media-card-preview/2x/neocrym-facebook-page-cover--2x.png"
+              
+              data-filename="neocrym-facebook-page-cover--2x.png"
+        
+            >
+            <a href="media/large/neocrym/v1/social-media-card-preview/2x/neocrym-facebook-page-cover--2x.png">
+              <img src="media/thumbs/neocrym/v1/social-media-card-preview/2x/neocrym-facebook-page-cover--2x.png"
+                   width="120"
+                   height="120"
+                   alt="neocrym-facebook-page-cover--2x.png" />
+            </a>
+          </li>    
+          <li data-src="media/large/neocrym/v1/social-media-card-preview/2x/neocrym-social-media-card-preview--2x.png"
+              data-sub-html=""
+              data-download-url="media/large/neocrym/v1/social-media-card-preview/2x/neocrym-social-media-card-preview--2x.png"
+              
+              data-filename="neocrym-social-media-card-preview--2x.png"
+        
+            >
+            <a href="media/large/neocrym/v1/social-media-card-preview/2x/neocrym-social-media-card-preview--2x.png">
+              <img src="media/thumbs/neocrym/v1/social-media-card-preview/2x/neocrym-social-media-card-preview--2x.png"
+                   width="120"
+                   height="120"
+                   alt="neocrym-social-media-card-preview--2x.png" />
+            </a>
+          </li></ul>
+    
+    <!--
+      Pagination
+    -->
+    
+    <!--
+      Zip file link
+    -->
+    
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

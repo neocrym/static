@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - v2</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="neocrym.html">neocrym</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="neocrym-v2.html">v2</a>
+      </nav>
+    
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+     <li>
+       <a href="neocrym-v2-1x.html">
+         <h3>1x</h3>
+         <div class="meta">
+           56 photos<br />
+           12 Jun 2021 - 12 Jun 2021
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/neocrym/v2/1x/neocrym-square-wordmark-vertical-white-on-darkgray--1x.png" /></li><li><img src="media/thumbs/neocrym/v2/1x/neocrym-square-wordmark-vertical-white-on-darkgray_1--1x.png" /></li><li><img src="media/thumbs/neocrym/v2/1x/neocrym-square-wordmark-vertical-white-on-softblack--1x.png" /></li><li><img src="media/thumbs/neocrym/v2/1x/neocrym-square-wordmark-vertical-white-on-transparent--1x.png" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="neocrym-v2-2x.html">
+         <h3>2x</h3>
+         <div class="meta">
+           56 photos<br />
+           12 Jun 2021 - 12 Jun 2021
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/neocrym/v2/2x/neocrym-circle-logo-black-on-transparent--2x.png" /></li><li><img src="media/thumbs/neocrym/v2/2x/neocrym-circle-logo-black-on-white--2x.png" /></li><li><img src="media/thumbs/neocrym/v2/2x/neocrym-circle-logo-white-on-black--2x.png" /></li><li><img src="media/thumbs/neocrym/v2/2x/neocrym-circle-logo-white-on-darkgray--2x.png" /></li>     </ul>
+       </a>
+     </li>
+    </ul>
+    
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+    </ul>
+    
+    <!--
+      Pagination
+    -->
+    
+    <!--
+      Zip file link
+    -->
+    
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
